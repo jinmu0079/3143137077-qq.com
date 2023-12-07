@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>期末作业</title>
+    <link rel="stylesheet" href="css/css.css">
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        }
+        body{
+        overflow-x: hidden;
+        }
+        .首页{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        }
+        .位置{
+        background-color: black;
+        display: inline-block;
+        position: absolute;
+        height: 66px;
+        width: 1920px;
+        z-index: 999;
+        }
+        .位置1{/*左侧*/
+        display: flex;
+        float: left;
+        width: 800px;
+        }
+        .logo{
+        display: inline-block;
+        }
+        .文字标题{
+        float: left;
+        display: inline-block;
+        height: 66px;
+        line-height: 66px;
+        text-indent: 20px;
+        }
+        ul{
+        list-style: none;
+        overflow: hidden;
+        }
+        ul li{
+        float: left
+        }
+        .文字标题 a:hover{
+        text-shadow: 0 0 20px skyblue,0 0 20px skyblue,0 0 20px skyblue,0 0 20px skyblue;
+        color: white;
+        }
+        .悬浮{
+        position: fixed;
+        width: 100px;
+        bottom: 20px;
+        left: 20px;
+        cursor: pointer;
+        }
+        #图片{
+        width: 1500px;
+        height: 755px;
+        background-image:radial-gradient(ellipse at center,#000000,#3d454eea);
+        border: 5px solid pink;
+        margin: 0 auto;
+        padding-top: 20px;
+        position: relative;
+        display: inline-block
+        }
+        #游戏{
+        width: 300px;
+        height: 340px;
+        }
+        #游戏 div {
+        width: 100px;
+        height: 60px;
+        border: 3px solid white;
+        overflow: hidden;
+        float: left;
+        margin: 9px;
+        }
+        #游戏 div img{
+        width: 100%;
+        height: auto;
+        }
+        #游戏 div:hover {
+        border-color: blue;
+        }
+        #游戏 div:hover img {
+        width: 1240px;
+        position: absolute;
+        left: 260px;
+        top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="首页">
+        <!-- 主题 -->
+        <div class="位置">
+            <!-- 图标行 -->
+            <div class="位置1">
+                <!-- 图标左侧 -->
+                <div class="logo">
+                    <!-- 图标 -->
+                    <img src=".\img/header_logo2.png"/>
+                </div>
+                <div class="文字标题">
+                    <!-- 文字,可以点击 -->
+                    <ul>
+						<li>
+							<a href="#">简&nbsp;介</a>
+						</li>
+						<li>
+							<a href="#">攻&nbsp;略</a>						
+						</li>
+						<li>
+							<a href="#">推&nbsp;荐</a>
+						</li>
+						<li>
+							<a href="#">分&nbsp;类</a>
+						</li>
+						<li>
+							<a href="#">交&nbsp;流</a>
+						</li>
+						<li>
+							<a href="#">社&nbsp;区</a>
+						</li>
+					</ul>
+                 </div>
+            </div>
+            <!-- 图标行结束 -->
+        </div>
+        <div id="无人深空" style="height: 1800px; height: 900px;">
+           <img src="./img/无人深空.png" alt="">
+        </div>
+        <div class="悬浮">
+            <img src="./img/002.jpg"/>
+        </div>
+        <div id="图片">
+            <div id="游戏">
+                <div><img src="./img/泰拉瑞亚.jpg" alt=""></div>
+                <div><img src="./img/辐射.jpg "alt=""></div>
+                <div><img src="./img/方舟.jpg" alt=""></div>
+                <div><img src="./img/7.webp" alt=""></div>
+                <div><img src="./img/饥荒.jpg" alt=""></div>
+                <div><img src="./img/上古卷轴.webp" alt=""></div>
+                <div><img src="./img/我的世界.webp" alt=""></div>
+                <div><img src="./img/星露谷.jpg" alt=""></div>
+                <div><img src="./img/泰拉瑞亚.jpg" alt=""></div>
+            </div>
+                
+        </div>
+        <div class="荒野的召唤，风景">
+            <div><img src="./img/0.jpg" alt=""></div>
+            <div><img src="./img/01.jpg" alt=""></div>
+            <div><img src="./img/02.jpg" alt=""></div>
+		</div>
+    </div>
+</body>
+</html>
